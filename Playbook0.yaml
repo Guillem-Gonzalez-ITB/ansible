@@ -1,0 +1,10 @@
+- name: Ping and say hi
+  hosts: all
+  become: true
+  tasks:
+    - name: Ping everyone
+      ansible.builtin.ping:
+
+    - name: Say hi
+      ansible.builtin.debug:
+        msg: Hello World
